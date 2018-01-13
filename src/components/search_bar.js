@@ -10,7 +10,7 @@ import React, { Component } from 'react';
 class SearchBar extends Component {
   constructor(props) {
     super(props);
-    this.state = { term: 'Init' };
+    this.state = { term: '' };
   }
   //all class based components should have a render method
   render() {
@@ -22,11 +22,15 @@ class SearchBar extends Component {
         <input
           className="sb"
           value={this.state.term}
-          onChange={event => this.setState({ term: event.target.value })}
+          onChange={event => this.onInputChange(event.target.value)}
         />
       </div>
     );
     //Value of the input: {this.state.term}
+  }
+  onInputChange(term) {
+    this.setState({ term });
+    this.props.onSearchTermChange(term);
   }
   // onInputChange(event) {
   //   console.log(event.target.value);
