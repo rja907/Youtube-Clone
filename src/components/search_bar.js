@@ -17,6 +17,7 @@ class SearchBar extends Component {
     return (
       //except the constructor func, always use this.setState.
       <div>
+        <img className="logo" src={'https://i.imgur.com/1FuQpgi.png'} />
         <input
           value={this.state.term}
           onChange={event => this.setState({ term: event.target.value })}
