@@ -48,6 +48,10 @@ class App extends Component {
           onVideoSelect={selectedVideo => this.setState({ selectedVideo })}
           videos={this.state.videos}
         />
+        <h5 className="foot">
+          Made with <i className="fa fa-heart" /> by{' '}
+          <a href="https://github.com/rja907">Raj</a>
+        </h5>
       </div>
     );
   }
