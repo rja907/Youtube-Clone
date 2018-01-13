@@ -1,13 +1,11 @@
 {
   "name": "Youtube Clone",
   "version": "1.0.0",
-  "description": "A React Youtube Clone",
+  "description": "A Front End Youtube Clone made with React",
   "main": "index.js",
   "repository": "git@github.com:rja907/Youtube-Clone.git",
   "scripts": {
-    "dev": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "start": "node server.js",
-    "postinstall": "webpack -p",
+    "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
     "test":
       "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
     "test:watch": "npm run test -- --watch"
@@ -30,7 +28,6 @@
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
-    "express": "^4.14.0",
     "font-awesome": "^4.7.0",
     "lodash": "^3.10.1",
     "react": "^0.14.3",
